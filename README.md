@@ -21,7 +21,7 @@ Extend forecast section
 
 Repo - Yamile
 
-#####Will swith at halftime
+#####Will switch at halftime
 ######Data Page - Yamile & Ren
 ######Weather - Kyle
 
