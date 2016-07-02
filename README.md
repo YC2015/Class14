@@ -10,12 +10,12 @@
 
 ####Weather 
 
-setup of images/icons
-Page Layout Section
-Header Section
-General Weather Section
-Current Conditions Section
-Extend forecast section
+###### setup of images/icons
+###### Page Layout Section
+###### Header Section
+###### General Weather Section
+###### Current Conditions Section
+###### Extend forecast section
 
 ##Teamwork Git Flow
 
