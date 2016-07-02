@@ -5,32 +5,62 @@
       <link rel='stylesheet' href='style.css'>
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
-
     <body>
       <header>
         <h1>Our Extremely Amazing Conversion Form</h1>
+        <hr class='hrOne'></hr>
       <header>
-
       <main>
-        <form>
-          <fieldset>
-            <legend>Conversion Forms</legend>
-            <label for='inches'>inches to/from centimeters</label>
+          <form>
+            <label for='inches'>inches to centimeters</label>
             <input type='number' name='inchesToCent' id='inches' value='' min='0' required>
-
-            <label for='fluidOz'>fluid ounces to/from milliliters</label>
-            <input type='number' name='fluidOunces' id='fluidOz' value='' min='0' required>
-
-            <label for='miles'>miles to/from kilometers</label>
+            <input type='submit'>
+          </form>
+          <form>
+            <label for='centimeters'>centimeters to inches</label>
+            <input type='number' name='centToInches' id='centimeters' value='' min='0' required>
+            <input type='submit'>
+          </form>
+          <form>
+            <label for='fluidOz'>fluid ounces to milliliters</label>
+            <input type='number' name='fluidOunce' id='fluidOz' value='' min='0' required>
+            <input type='submit'>
+          </form>
+          <form>
+            <label for='milliliters'>milliliters to fluid ounces</label>
+            <input type='number' name='millToFluid' id='milliliters' value='' min='0' required>
+            <input type='submit'>
+          </form>
+          <form>
+            <label for='miles'>miles to kilometers</label>
             <input type='number' name='milesToKilo' id='miles' value='' min='0' required>
-
-            <label for='pounds'>pounds to/from kilograms</label>
+            <input type='submit'>
+          </form>
+          <form>
+            <label for='kilometers'>kilometers to miles</label>
+            <input type='number' name='kilometersToMiles' id='kilometers' value='' min='0' required>
+            <input type='submit'>
+          </form>
+          <form>
+            <label for='pounds'>pounds to kilograms</label>
             <input type='number' name='poundsToKilo' id='pounds' value='' min='0' required>
-
+            <input type='submit'>
+          </form>
+          <form>
+            <label for='kilograms'>kilograms to pounds</label>
+            <input type='number' name='kiloToPounds' id='kilograms' value='' min='0' required>
+            <input type='submit'>
+          </form>
+          <form>
             <label for='shitTon'>standard shit-ton to metric shit-ton</label>
             <input type='number' name='shitTon' id='pounds' value='' min='0' required>
-        </form>
-        </fieldset>
+            <input type='submit'>
+          </form>
+          <form>
+            <label for='metricShit'>metric shit-ton to standard shit-ton</label>
+            <input type='number' name='metric' id='metricShit' value='' min='0' required>
+            <input type='submit'>
+          </form>
       </main>
       <footer>
       </footer>
