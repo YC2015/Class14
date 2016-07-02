@@ -5,9 +5,19 @@ html {
 body {
 }
 
-fieldset {
+form {
+  display: flex;
+  padding: 2px;
+  font-family: Open Sans;
+  width: 100%;
 }
 
 h1 {
   font-family: Open Sans;
+}
+
+.hrOne {
+  background-color: black;
+  height: 5px;
+  width: 100%;
 }
