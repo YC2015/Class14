@@ -29,6 +29,58 @@ nav p {
   color: grey;
 }
 
+input {
+  height: 25px;
+  margin: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type="button"] {
+  height: 29px;
+  width: 35px;
+}
+
+h2 {
+  margin: 5px 0px;
+}
+
+h4 {
+  margin-left: 5px;
+  margin-bottom: 1px;
+  margin-top: 7px;
+}
+
+#view {
+  font-size: 14px;
+  margin: 0px 5px;
+}
+
+#location {
+  font-size: 20px;
+  margin-left: 5px;
+  line-height: 0px;
+}
+
 #about {
   margin-right: 200px;
+}
+
+#general {
+  display: flex;
+  justify-content: space-between;
+}
+
+#general p {
+  margin: 2px;
+}
+
+#gen-right{
+  width: 60%;
+  font-size: 14px;
+  margin-right: 80px;
+}
+
+#search {
+  display: flex;
 }
