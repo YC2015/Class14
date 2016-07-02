@@ -14,3 +14,14 @@ function cmToInches(value){
 }
 
 cmToInches();
+
+function fluidOncesToMl(value){
+  var newValueInMl = parseFloat(value) * (29.5735/1);
+  return newValueInMl.toFixed(3);
+}
+
+fluidOncesToMl();
+
+function mlToFluidOnces(value){
+  var newValueFluidOnces = parseFloat(value) * (1/)
+}
