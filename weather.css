@@ -1,0 +1,34 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #b1ebfa;
+}
+
+body {
+  width: 95%;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 57px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ebe9ea;
+}
+
+nav p {
+  color: grey;
+}
+
+#about {
+  margin-right: 200px;
+}
