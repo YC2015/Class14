@@ -24,3 +24,11 @@ nav {
   justify-content: space-around;
   background-color: #ebe9ea;
 }
+
+nav p {
+  color: grey;
+}
+
+#about {
+  margin-right: 200px;
+}
