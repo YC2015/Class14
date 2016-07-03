@@ -79,8 +79,34 @@ h4 {
   width: 60%;
   font-size: 14px;
   margin-right: 80px;
+  margin-bottom: 20px;
 }
 
 #search {
   display: flex;
+}
+
+#moreLinks {
+  display: flex;
+  margin-left: 5px;
+  margin-top: 30px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#miniLinks {
+  display:flex;
+  padding: 2px;
+  margin-right: -50px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+#share {
+  margin-right: 10px;
+  margin-bottom: -5px;
+}
+
+#smallBar {
+
 }
