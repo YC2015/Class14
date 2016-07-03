@@ -118,4 +118,79 @@ h4 {
 .center-font {
   font-size: 20px;
   color: navy;
+  margin-top: 2px;
+}
+
+.extendedtext{
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.dailynightlybox{
+  width: 11.11%;
+  margin-top: 0px;
+  align-items: center;
+  height: 11.11%;
+}
+
+.top{
+  margin-top: 0px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.image{
+  height: 40%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.weather{
+  height: 50px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.lowblue{
+  height: 50px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #00B2EE;
+}
+.lowred{
+  height: 50px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: red;
+}
+
+
+
+
+#footersection{
+  border-color: black;
+  border-style: solid;
+  padding: 0px;
+  margin: 10px;
+  background-color:  #d9d9d9;
+}
+
+#extendedforecastbar {
+  background-color:  #d9d9d9;
+  padding-left: 2px;
+}
+
+#extendedforecastpics{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  border-top: 0px;
+  padding-top: 10px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
