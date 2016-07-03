@@ -1,10 +1,4 @@
-
-
-
-
-
 //Conversion Functions
-
 
 //Inches and Centimeters
 function inchesToCentimeters(value){
@@ -12,14 +6,10 @@ function inchesToCentimeters(value){
   return newValueInCm.toFixed(3);
 }
 
-inchesToCentimeters();
-
 function cmToInches(value){
   var newValueInIn = parseFloat(value) * (1 / 2.54);
   return newValueInIn.toFixed(3);
 }
-
-cmToInches();
 
 //Fluid Onces and Milliliters
 function fluidOncesToMl(value){
@@ -27,31 +17,21 @@ function fluidOncesToMl(value){
   return newValueInMl.toFixed(3);
 }
 
-fluidOncesToMl();
-
 function mlToFluidOnces(value){
   var newValueInFluidOnces = parseFloat(value) * (1 / 29.5735);
   return newValueInFluidOnces.toFixed(3);
 }
 
-mlToFluidOnces();
-
 //Miles to Kilometers
-
 function miToKm(){
   var newValueInKm = parseFloat(value) * (1.60934 / 1);
   return newValueInKm.toFixed(3);
 }
 
-miToKm();
-
 function kmToMi(){
   var newValueInMi = parseFloat(value) * (1 / 1.60934);
   return newValueInMi.toFixed(3);
 }
-
-kmToMi();
-
 
 // Pounds to Kilograms
 function lbsToKg(){
@@ -59,11 +39,31 @@ function lbsToKg(){
   return newValueInKg.toFixed(3);
 }
 
-lbsToKg();
-
 function kgToLbs(){
   var newValueInLbs = parseFloat(value) * (1 / 0.453592);
   return newValueInLbs.toFixed(3);
 }
 
-kgToLbss();
+var inches = document.getElementById('in');
+inches.addEventListener('submit', inchesToCentimeters);
+
+var cent = document.getElementById('in');
+cent.addEventListener('submit', cmToInches);
+
+var ounces = document.getElementById('in');
+ounces.addEventListener('submit', fluidOncesToMl);
+
+var mili = document.getElementById('in');
+mili.addEventListener('submit', mlToFluidOnces);
+
+var miles = document.getElementById('in');
+miles.addEventListener('submit', miToKm);
+
+var kilo = document.getElementById('in');
+kilo.addEventListener('submit', kmToMi);
+
+var lbs = document.getElementById('in');
+lbs.addEventListener('submit', lbsToKg);
+
+var kilogram = document.getElementById('in');
+kilogram.addEventListener('submit', kgToLbs);
