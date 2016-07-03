@@ -1,63 +1,71 @@
-//Conversion Functions
+// array of conversion functions ///////////////////////////////////////
+functionsArray = [
+  inchesToCentimeters,
+  cmToInches,
+  fluidOncesToMl,
+  mlToFluidOnces,
+  miToKm,
+  kmToMi,
+  lbsToKg,
+  kgToLbs
+];
+
+/////Conversion Functions///////////////////////////////////////////////////////////////////////////////////
 
 function inchesToCentimeters(value){
-  var newValueInCm = parseFloat(value) * (2.54 / 1);
+  var newValueInCm = parseFloat((value) * (2.54 / 1)).toFixed(3);
   console.log(newValueInCm);
-  return newValueInCm.toFixed(3);
 }
 
 function cmToInches(value){
-  var newValueInIn = parseFloat(value) * (1 / 2.54);
-  return newValueInIn.toFixed(3);
+  var newValueInIn = parseFloat((value) * (1 / 2.54)).toFixed(3);
   console.log(newValueInIn);
 }
 
   //Fluid Onces and Milliliters
 function fluidOncesToMl(value){
-  var newValueInMl = parseFloat(value) * (29.5735 / 1);
-  return newValueInMl.toFixed(3);
+  var newValueInMl = parseFloat((value) * (29.5735 / 1)).toFixed(3);
+  console.log(newValueInMl);
 }
 
 function mlToFluidOnces(value){
-  var newValueInFluidOnces = parseFloat(value) * (1 / 29.5735);
-  return newValueInFluidOnces.toFixed(3);
+  var newValueInFluidOnces = parseFloat((value) * (1 / 29.5735)).toFixed(3);
+  console.log(newValueInFluidOnces);
 }
 
   //Miles to Kilometers
-function miToKm(){
-  var newValueInKm = parseFloat(value) * (1.60934 / 1);
-  return newValueInKm.toFixed(3);
+function miToKm(value){
+  var newValueInKm = parseFloat((value) * (1.60934 / 1)).toFixed(3);
+  console.log(newValueInKm);
 }
 
-function kmToMi(){
-  var newValueInMi = parseFloat(value) * (1 / 1.60934);
-  return newValueInMi.toFixed(3);
+function kmToMi(value){
+  var newValueInMi = parseFloat((value) * (1 / 1.60934)).toFixed(3);
+  console.log(newValueInMi);
 }
 
   // Pounds to Kilograms
-function lbsToKg(){
-  var newValueInKg = parseFloat(value) * (0.453592 / 1 );
-  return newValueInKg.toFixed(3);
+function lbsToKg(value){
+  var newValueInKg = parseFloat((value) * (0.453592 / 1 )).toFixed(3);
+  console.log(newValueInKg);
 }
 
-function kgToLbs(){
-  var newValueInLbs = parseFloat(value) * (1 / 0.453592);
-  return newValueInLbs.toFixed(3);
+function kgToLbs(value){
+  var newValueInLbs = parseFloat((value) * (1 / 0.453592)).toFixed(3);
+  console.log(newValueInLbs);
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function performConversion(){
-
+  // get value of user input
   var value = document.getElementById('input').value;
-  //Inches and Centimeters
-  var inches = document.getElementById('inches');
-  var cent = document.getElementById('centimeters');
+  // get value of seleced option
+  var e = document.getElementById('selections');
+  var strUser = e.selectedIndex;
 
-  if (inches.selected) {
-    inchesToCentimeters(value);
-  } else if (cent.selected) {
-    cmToInches(value);
-  }
+  functionsArray[strUser](value);
 }
 
 var button = document.getElementById('submit');
-button.addEventListener('submit', performConversion);
+button.addEventListener('click', performConversion);
