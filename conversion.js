@@ -1,9 +1,9 @@
 // array of conversion functions ///////////////////////////////////////
-functionsArray = [
+var functionsArray = [
   inchesToCentimeters,
   cmToInches,
-  fluidOncesToMl,
-  mlToFluidOnces,
+  fluidOuncesToMl,
+  mlToFluidOunces,
   miToKm,
   kmToMi,
   lbsToKg,
@@ -23,12 +23,12 @@ function cmToInches(value){
 }
 
   //Fluid Onces and Milliliters
-function fluidOncesToMl(value){
+function fluidOuncesToMl(value){
   var newValueInMl = parseFloat((value) * (29.5735 / 1)).toFixed(3);
   console.log(newValueInMl);
 }
 
-function mlToFluidOnces(value){
+function mlToFluidOunces(value){
   var newValueInFluidOnces = parseFloat((value) * (1 / 29.5735)).toFixed(3);
   console.log(newValueInFluidOnces);
 }
